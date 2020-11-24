@@ -8,7 +8,7 @@ FROM        openjdk:15-slim
 LABEL       author="Michael Parker" maintainer="parker@pterodactyl.io"
 
 RUN apt-get update -y \
- && apt-get install -y curl ca-certificates openssl git tar sqlite fontconfig tzdata iproute2 \
+ && apt-get install -y curl ca-certificates openssl git tar sqlite fontconfig tzdata iproute2 webp \
  && useradd -d /home/container -m container
  
 USER container
